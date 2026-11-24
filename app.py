@@ -235,7 +235,7 @@ elif page == "Script Studio":
     st.title("Script Studio")
     channel = st.selectbox("Channel", list(CHANNELS.keys()))
     topic = st.text_input("Video topic", st.session_state.get("selected_topic", "A surprising discovery in gaming"))
-    duration = st.slider("Target duration (seconds)", 15, 58,  thirty if False else  thirty if False else  thirty if False else  thirty if False else  thirty if False else 30)
+    duration = st.slider("Target duration (seconds)", 15, 58, 30)
     gemini_key = st.text_input("Gemini API key (optional)", type="password", help="Without a key, the built-in script template is used.")
     if st.button("Generate script", type="primary"):
         try:
